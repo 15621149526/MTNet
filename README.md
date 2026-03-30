@@ -31,11 +31,11 @@ MTNet achieves state-of-the-art (SOTA) accuracy under low Signal-to-Noise Ratio 
 If you find our work, model architecture, or pre-trained weights useful for your research, please consider giving this repository a star ⭐ and citing our paper:
 
 ```bibtex
-@misc{mtnet2024,
-    title={MTNet: A Robust Modulation Recognition Method Based on Mamba and Non-Local Memory Aggregation Transformer},
-    author={Your Name and Co-authors},
-    year={2024},
-    eprint={xxxx.xxxxx},
-    archivePrefix={arXiv},
-    primaryClass={eess.SP},
+@misc{,
+      title={},
+      author={},
+      year={},
+      eprint={},
+      archivePrefix={},
+      primaryClass={},
 }
