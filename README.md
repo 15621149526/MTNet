@@ -1,48 +1,41 @@
-# MTNet
-English | [简体中文](#)
+[English](#) | [简体中文](#)
 
 <div align="center">
 
-## A Robust Modulation Recognition Method Based on Mamba and Non-Local Memory Aggregation Transformer
+## MTNet: A Robust Modulation Recognition Method Based on Mamba and Non-Local Memory Aggregation Transformer
 
-[![license](https://img.shields.io/badge/license-Apache--2.0-green)](https://opensource.org/licenses/Apache-2.0)
-[![pull requests](https://img.shields.io/badge/pull%20requests-0%20open-green)](https://github.com/15621149526/MTNet/pulls)
-[![issues](https://img.shields.io/badge/issues-0%20open-red)](https://github.com/15621149526/MTNet/issues)
-[![Stars](https://img.shields.io/github/stars/15621149526/MTNet?style=flat-square)](https://github.com/15621149526/MTNet/stargazers)
-[![arXiv](https://img.shields.io/badge/arXiv-None-red)](https://arxiv.org/)
-[![Contact](https://img.shields.io/badge/Contact-email-yellow)](mailto:你的真实邮箱@xxx.com)
+[![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![stars](https://img.shields.io/github/stars/15621149526/MTNet?style=flat&color=orange)](https://github.com/15621149526/MTNet/stargazers)
+[![issues](https://img.shields.io/github/issues/15621149526/MTNet?color=red)](https://github.com/15621149526/MTNet/issues)
+[![paper](https://img.shields.io/badge/Paper-arXiv-B31B1B.svg)](https://arxiv.org/)
+[![contact](https://img.shields.io/badge/Contact-Email-007EC6.svg)](mailto:233071203111@stu.sdmu.edu.cn)
 
 </div>
 
----
+This is the official PyTorch implementation for the paper:
+> **[MTNet: A Robust Modulation Recognition Method Based on Mamba and Non-Local Memory Aggregation Transformer](#)**
 
-This is the official implementation of papers
+### 🔥 News
+- **[2026/03]** The core training code, dynamic genetic augmentation, and optimal pre-trained weights for `RadioML 2016.10a` and `RML22.01A` are now officially released!
 
-* [A Robust Modulation Recognition Method Based on Mamba and Non-Local Memory Aggregation Transformer](#)
+### ✨ Key Features
+- **Shallow Temporal Modeling:** Built upon the S6-based **Mamba** block for ultra-long IQ signal sequences representation with linear complexity.
+- **Dynamic SoftThresholding:** A dual-statistical awareness denoising mechanism filtering environmental noise effectively.
+- **NMDDA Block:** Non-local Memory Dense Dynamic Aggregation to achieve cross-layer feature fusion with error-gated selective retrieval.
 
-## 🚀 Updates
+### 📈 Performance
+MTNet achieves state-of-the-art (SOTA) accuracy under low Signal-to-Noise Ratio (SNR) conditions across multiple standard datasets. 
+*(Detailed visualization scripts for SNR curves and confusion matrices are included in this repository).*
 
-* **[2024/0x]** MTNet repository is officially open-sourced!
-
-## 🎈 Implementations
-
-* Added MTNet model architecture based on Mamba and NMDDA.
-* Added training scripts for RadioML 2016.10a and RML22 datasets.
-
-## 🦄 Performance
-
-* Achieved superior accuracy under low SNR conditions. Detailed performance tables will be updated soon.
-
-## Citation
-
-If you use `MTNet` in your work, please like this repository and use the following BibTeX entries:
+### 📌 Citation
+If you find our work, model architecture, or pre-trained weights useful for your research, please consider giving this repository a star ⭐ and citing our paper:
 
 ```bibtex
-@misc{
-    title={},
-    author={},
-    year={},
-    eprint={},
-    archivePrefix={},
-    primaryClass={},
+@misc{mtnet2024,
+    title={MTNet: A Robust Modulation Recognition Method Based on Mamba and Non-Local Memory Aggregation Transformer},
+    author={Your Name and Co-authors},
+    year={2024},
+    eprint={xxxx.xxxxx},
+    archivePrefix={arXiv},
+    primaryClass={eess.SP},
 }
