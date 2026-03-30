@@ -17,9 +17,9 @@ def train():
     
     DATA_PATH = 'data/RML22.01A.pkl' 
     
-    print(f"🌟 MTNet Experiment Started | GPU: {torch.cuda.get_device_name(0)}")
+    print(f" MTNet Experiment Started | GPU: {torch.cuda.get_device_name(0)}")
 
-    print("📦 Loading dataset and splitting train/val sets...")
+    print(" Loading dataset and splitting train/val sets...")
     train_set = RMLDataset(DATA_PATH, mode='train') 
     val_set = RMLDataset(DATA_PATH, mode='val')     
     
@@ -77,14 +77,14 @@ def train():
          
         scheduler.step(cur_val_loss)
         
-        print(f"📊 Epoch {epoch} Summary: [Train Acc: {100.*train_correct/train_total:.2f}%] "
+        print(f" Epoch {epoch} Summary: [Train Acc: {100.*train_correct/train_total:.2f}%] "
               f"[Val Acc: {cur_val_acc:.2f}%] [LR: {optimizer.param_groups[0]['lr']:.6f}]")
 
         if cur_val_acc > best_val_acc:
             best_val_acc = cur_val_acc
             if not os.path.exists('checkpoints'): os.makedirs('checkpoints')
             torch.save(model.state_dict(), 'checkpoints/mtnet_best_rml22.pth')
-            print(f"🏆 Better model found, saved to checkpoints/mtnet_best_rml22.pth")
+            print(f" Better model found, saved to checkpoints/mtnet_best_rml22.pth")
 
 if __name__ == "__main__":
     try:
