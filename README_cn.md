@@ -13,19 +13,16 @@
 </div>
 
 这是以下论文的官方 PyTorch 实现代码：
-> **[MTNet: A Robust Modulation Recognition Method Based on Mamba and Non-Local Memory Aggregation Transformer](#)**
+
 
 ### 🔥 最新动态
-- **[2026/03]** 针对 `RadioML 2016.10a` 和 `RML22.01A` 数据集的核心训练代码、动态遗传增强算子以及最优预训练权重现已正式开源！
+
 
 ### ✨ 核心特性
-- **浅层时序建模 (Shallow Temporal Modeling):** 基于 S6 的 **Mamba** 模块构建，以线性复杂度实现对超长 IQ 信号序列的高效特征表示。
-- **动态软阈值去噪 (Dynamic SoftThresholding):** 一种双统计感知去噪机制，能够有效地过滤环境噪声。
-- **密集动态聚合 (NMDDA Block):** 非局部记忆密集动态聚合模块，通过误差门控选择性检索实现跨层级的特征融合。
+
 
 ### 📈 性能表现
-MTNet 在多个标准数据集的低信噪比 (SNR) 条件下均达到了当前最优 (SOTA) 的准确率。
-*(本仓库内包含用于生成 SNR 折线图和混淆矩阵的详细可视化脚本)。*
+
 
 ### 📌 引用
 如果我们的工作、模型架构或预训练权重对您的研究有所帮助，请考虑给本仓库点个星 ⭐ 并引用我们的论文：
