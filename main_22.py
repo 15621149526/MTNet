@@ -90,4 +90,4 @@ if __name__ == "__main__":
     try:
         train()
     except KeyboardInterrupt:
-        print("\n🛑 Experiment manually stopped.")
+        print("\n Experiment manually stopped.")
