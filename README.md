@@ -1,4 +1,4 @@
-[English](#) | [简体中文](#)
+[English](#) | [简体中文](README_cn)
 
 <div align="center">
 
