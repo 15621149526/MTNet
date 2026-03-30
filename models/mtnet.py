@@ -21,7 +21,6 @@ class SoftThresholding(nn.Module):
         tau = self.net(eta) * gap 
         return torch.sign(x) * torch.relu(torch.abs(x) - tau)
 
-
 class NMDDA_Block(nn.Module):
     def __init__(self, d_model, nhead=8):
         super().__init__()
@@ -49,7 +48,6 @@ class NMDDA_Block(nn.Module):
         psi = self.norm2(attn_out + x)
         
         return self.mlp(psi) + psi
-
 
 class MTNet(nn.Module):
     def __init__(self, num_classes=11, d_model=64): 
